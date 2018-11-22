@@ -1,0 +1,30 @@
+{
+  "name": "react-component-publish",
+  "version": "1.0.0",
+  "description": "Sample library with React components",
+  "main": "lib/index.umd.js",
+  "module": "dist/react-some-component.esm.js",
+  "sideEffects": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "webpack && babel src --out-dir lib",
+    "build-stats": "webpack --json > stats.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "16.x"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "clean-webpack-plugin": "^1.0.0",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
