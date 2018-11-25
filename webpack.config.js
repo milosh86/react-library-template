@@ -10,7 +10,7 @@ module.exports = {
     path: path.resolve(__dirname, "lib"),
     filename: "index.umd.js",
     libraryTarget: "umd",
-    library: "ReactModal"
+    library: "libraryName"
   },
   module: {
     rules: [{ test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }]

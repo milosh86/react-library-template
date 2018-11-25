@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "description": "Sample library with React components",
   "main": "lib/index.umd.js",
-  "module": "dist/react-some-component.esm.js",
+  "main2": "dist/index.umd.js",
+  "module": "dist/react-lib.esm.js",
   "sideEffects": false,
+  "browser": "dist/react-lib.umd.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "webpack && babel src --out-dir lib",
-    "build-stats": "webpack --json > stats.json"
+    "build-lib": "webpack && babel src --out-dir lib",
+    "build-dist": "rollup -c",
+    "build-stats": "webpack --json > stats.json",
+    "build": "npm run build-lib && npm run build-dist"
   },
   "author": "",
   "license": "ISC",
@@ -24,6 +28,10 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
     "clean-webpack-plugin": "^1.0.0",
+    "rollup": "^0.67.3",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^3.4.0",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2"
   }

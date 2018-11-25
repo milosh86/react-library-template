@@ -3,6 +3,8 @@ Starter for creating React library
 
 - npm init
 - add react to peerDependencies
+
+# Webpack setup + Babel (except babel-loader, Babel setup is the same for Rollup or any other tool)
 - add library code to src dir 
 - Add webpack + webpack-cli (devDependencies assumed if not specified)
 - create webpack.config.js + add "entry", "output", "mode"
@@ -19,4 +21,4 @@ Starter for creating React library
 - check https://medium.com/webpack/webpack-and-rollup-the-same-but-different-a41ad427058c
 - use Rollup if library is tree-shakeable to export esm bundle referenced in "module" in package.json
 
-- add .gitignore
+# Rollup setup
