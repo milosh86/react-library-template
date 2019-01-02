@@ -31,5 +31,5 @@ Starter for creating React library
 - add name (library name), external and globals (React, ReactDOM, PropTypes asnd similar) options for umd build
 - for "es" build we don't use "commonjs" and "resolve" plugins, only ES modules are used! 
 
-setup eslint: https://www.npmjs.com/package/eslint-config-react-app https://reactjs.org/docs/hooks-rules.html
-setup jest: https://jestjs.io/docs/en/getting-started.html
+* setup eslint: https://www.npmjs.com/package/eslint-config-react-app https://reactjs.org/docs/hooks-rules.html
+* setup jest: https://jestjs.io/docs/en/getting-started.html
