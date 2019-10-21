@@ -14,7 +14,7 @@ export default class Hello extends React.Component {
     const {o1, ...o2} = {o1: 123, a: 3, b: 4};
     return (
       <p>
-        Hello there... + {a} + {b.length} {my.name} {this.state.myState} {o1}
+        <b>Hello there...</b> + {a} + {b.length} {my.name} {this.state.myState} {o1}
       </p>
     );
   }
