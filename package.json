@@ -7,16 +7,16 @@
   "sideEffects": false,
   "browser": "dist/react-lib.umd.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --watch",
     "prebuild": "eslint src && rm -rf ./dist",
     "build": "rollup -c"
   },
   "author": "",
   "license": "ISC",
   "peerDependencies": {
+    "prop-types": "15.x",
     "react": "16.x",
-    "react-dom": "16.x",
-    "prop-types": "15.x"
+    "react-dom": "16.x"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
@@ -32,6 +32,9 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^2.1.2",
+    "jest": "^24.9.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
     "rollup": "^1.24.0",
     "rollup-plugin-babel": "^4.3.3"
   },
