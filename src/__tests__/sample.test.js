@@ -1,14 +1,15 @@
 import Foo from "../Foo.js";
-import React from 'react';
+import { render } from "@testing-library/react";
+import React from "react";
 
 describe("Sample Test", () => {
   test("some passing test", () => {
     expect(1 + 1).toBe(2);
   });
 
-  test('Foo', () => {
-    let c = <Foo />
+  test("Foo", () => {
+    let {queryByText} = render(<Foo bar="BAR" someProp={123} />);
 
-    expect(c).toBeTruthy()
-  })
+    expect(queryByText("Foo: BAR, Rest Props Size: 1")).toBeTruthy;
+  });
 });
